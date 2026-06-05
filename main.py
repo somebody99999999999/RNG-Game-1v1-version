@@ -21,6 +21,7 @@ Player_two = random.randint(1, 10)
 while True:
         # Ask if the user's want a re match or at the beginning to just start the game
         rematch = input("You want to get a re-match? type (y/n) ").lower()
+        print("")
 
         if rematch == "y" and "Y":
 
@@ -45,6 +46,13 @@ while True:
 
             print("Player 2 rolls a", Player_two)
             print("")
+
+            # So it doesn't reroll if there is a ten aleady on the board 
+            if Player_one != 11:
+                    Player_one = random.randint(1, 10)
+
+            if Player_two != 11:
+                    Player_two = random.randint(1, 10)
 
             # The Game Code End
 
