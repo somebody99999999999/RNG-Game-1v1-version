@@ -8,7 +8,8 @@ import random
 print("Hello and welcome to RNG Game 👋")
 print()
 print("🔴 INSTRUCTIONS 🔴")
-print(" Whoever gets the higher number wins ")
+print("Their is two players (Player One and Player Two) ")
+print("Whoever gets the higher number out of the two wins ")
 print("Press Enter / Return to start the game ")
 input()
 
