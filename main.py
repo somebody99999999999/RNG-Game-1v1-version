@@ -21,32 +21,41 @@ Player_two = random.randint(1, 10)
 reset_game = True
 
 while True:
-    # Checks if either player one or player two win's
-    if Player_one > Player_two:
-        print("Player one wins")
+        # Ask if the user's want a re match
+        rematch = input("You want to get a re-match? type (y/n) ").lower()
 
-    elif Player_two > Player_one:
-        print("Player two wins")
+        if rematch == "y" and "Y":
 
-    else:
-        print("It's a tie")
+            # Checks if either player one or player two win's
+            if Player_one > Player_two:
+                print("")
+                print("Player one wins")
 
-    print("The numbers you both got was ...")
-    input()
+            elif Player_two > Player_one:
+                print("Player two wins")
 
-    # Prints out player ones and player two's nmuber's
-    print("Player 1 rolls a", Player_one)
+            else:
+                print("It's a tie")
 
-    print("Player 2 rolls a", Player_two)
+            print("The numbers you both got was ...")
+            input()
 
-    # Ask if the user's want a re match
-    rematch = input("You want to get a re-match? ").lower()
+            # Prints out player ones and player two's nmuber's
+            print("Player 1 rolls a", Player_one)
 
-    if rematch == "n":
-        print("Bye but thanks for playing my RNG game")
+            print("Player 2 rolls a", Player_two)
+            print("")
 
-        # Breaks out of the loop
-        break
+            
+        if rematch == "n":
+            print("Bye but thanks for playing my RNG game")
 
-    if rematch == "y" and "Y":
-        print("ok")
+            # Breaks out of the loop
+            break
+
+        # The Anti Cheat so they can't just spam space to win everytime
+        if rematch ==  "":
+            print("")
+            print("Nice try play the game the right way ")
+            print("")
+            break
