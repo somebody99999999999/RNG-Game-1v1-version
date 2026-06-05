@@ -20,10 +20,12 @@ Player_two = random.randint(1, 10)
 
 
 while True:
-        # Ask if the user's want a re match
+        # Ask if the user's want a re match or at the beginning to just start the game
         rematch = input("You want to get a re-match? type (y/n) ").lower()
 
         if rematch == "y" and "Y":
+
+            # The Game Code Start
 
             # Checks if either player one or player two win's
             if Player_one > Player_two:
@@ -44,6 +46,8 @@ while True:
 
             print("Player 2 rolls a", Player_two)
             print("")
+
+            # The Game Code End
 
             
         if rematch == "n":
