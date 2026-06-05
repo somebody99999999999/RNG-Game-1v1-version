@@ -1,3 +1,6 @@
+# To clear the terminal
+print("\033c", end="")
+
 # The name of the program
 # RNG Game 1v1 version
 
@@ -6,11 +9,11 @@ import random
 
 # Intro and Instructions to the program / game
 print("Hello and welcome to RNG Game press Enter / Return")
-print()
+input()
 print("🔴 INSTRUCTIONS 🔴")
 print(" Whoever gets the higher number wins ")
 print("Press Enter / Return to start the game ")
-print()
+input()
 
 # Generates player ones number from one and any number 
 Player_one = random.randint(1, 10)
