@@ -6,11 +6,11 @@ import random
 
 # Intro and Instructions to the program / game
 print("Hello and welcome to RNG Game press Enter / Return")
-input()
+print()
 print("🔴 INSTRUCTIONS 🔴")
 print(" Whoever gets the higher number wins ")
 print("Press Enter / Return to start the game ")
-input()
+print()
 
 # Generates player ones number from one and any number 
 Player_one = random.randint(1, 10)
@@ -39,7 +39,7 @@ while True:
                 print("It's a tie")
 
             print("The numbers you both got was ...")
-            input()
+            print()
 
             # Prints out player ones and player two's nmuber's
             print("Player 1 rolls a", Player_one)
@@ -47,7 +47,7 @@ while True:
             print("Player 2 rolls a", Player_two)
             print("")
 
-            # So it re rolls the numbers so it doesn't stay the same all of the time or keep the same numbers and makes one player always win
+            # So it re rolls the numbers so it doesn't stay the same number the whole time or keep the same numbers and makes one player always win
             if Player_one != 11:
                     Player_one = random.randint(1, 10)
 
