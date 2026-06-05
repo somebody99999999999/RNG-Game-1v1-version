@@ -12,13 +12,12 @@ print(" Whoever gets the higher number wins ")
 print("Press Enter / Return to start the game ")
 input()
 
-# Generates player ones number from one and any number
+# Generates player ones number from one and any number 
 Player_one = random.randint(1, 10)
 
-# Generates player two's number from one and any number
+# Generates player two's number from one and any number 
 Player_two = random.randint(1, 10)
 
-reset_game = True
 
 while True:
         # Ask if the user's want a re match
