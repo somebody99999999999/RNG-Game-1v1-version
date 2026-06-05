@@ -18,7 +18,6 @@ Player_one = random.randint(1, 10)
 # Generates player two's number from one and any number 
 Player_two = random.randint(1, 10)
 
-
 while True:
         # Ask if the user's want a re match or at the beginning to just start the game
         rematch = input("You want to get a re-match? type (y/n) ").lower()
