@@ -1,4 +1,4 @@
-# To clear the terminal
+# To make the terminal more clear and easy to read
 print("\033c", end="")
 
 # The name of the program
