@@ -53,10 +53,10 @@ while True:
         if rematch == "n":
             print("Bye but thanks for playing my RNG game")
 
-            # Breaks out of the loop
+            # Breaks the user out of the loop
             break
 
-        # The Anti Cheat so they can't just spam space to win everytime
+        # The Anti Cheat so they can't just spam enter to keep getting re matches
         if rematch ==  "":
             print("")
             print("Nice try play the game the right way ")
