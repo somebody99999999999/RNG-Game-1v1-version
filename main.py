@@ -1,6 +1,3 @@
-# To make the terminal more clear and easy to read
-print("\033c", end="")
-
 # The name of the program
 # RNG Game 1v1 version
 
