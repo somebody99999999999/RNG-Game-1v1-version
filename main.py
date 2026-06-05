@@ -1,5 +1,5 @@
 # The name of the program
-# RNG Game
+# RNG Game 1v1 version
 
 # The import of the random module
 import random
@@ -8,28 +8,28 @@ import random
 print("Hello and welcome to RNG Game press Enter / Return")
 input()
 print("🔴 INSTRUCTIONS 🔴")
-print(" Whoever gets the higher number wins! ")
+print(" Whoever gets the higher number wins ")
 print("Press Enter / Return to start the game ")
 input()
 
-# Generate the first random pair numbers from between one and any number
+# Generates player ones number from one and any number
 Player_one = random.randint(1, 10)
 
-# Generate the second random pair numbers between one and any number
+# Generates player two's number from one and any number
 Player_two = random.randint(1, 10)
 
 reset_game = True
 
 while True:
-    # Checks either if player one or 2 won
+    # Checks if either player one or player two win's
     if Player_one > Player_two:
-        print("Player 1 Wins!")
+        print("Player one wins")
 
     elif Player_two > Player_one:
-        print("Player 2 Wins!")
+        print("Player two wins")
 
     else:
-        print("It's a Tie!")
+        print("It's a tie")
 
     print("The numbers you both got was ...")
     input()
@@ -39,16 +39,14 @@ while True:
 
     print("Player 2 rolls a", Player_two)
 
-    # So it doesn't reroll if there is a ten aleady on the board
-    Player_one = random.randint(1, 10)
+    # Ask if the user's want a re match
+    rematch = input("You want to get a re-match? ").lower()
 
-    Player_two = random.randint(1, 10)
-
-    # Ask the user for a re-roll
-    reroll = input("You want to get a reroll? (y/n) ").lower()
-
-    if reroll == "n":
+    if rematch == "n":
         print("Bye but thanks for playing my RNG game")
-       
+
         # Breaks out of the loop
         break
+
+    if rematch == "y" and "Y":
+        print("ok")
