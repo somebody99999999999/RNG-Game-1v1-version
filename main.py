@@ -47,7 +47,7 @@ while True:
             print("Player 2 rolls a", Player_two)
             print("")
 
-            # So it doesn't reroll if there is a ten aleady on the board 
+            # So it re rolls the numbers so it doesn't stay the same all of the time or keep the same numbers and makes one player always win
             if Player_one != 11:
                     Player_one = random.randint(1, 10)
 
