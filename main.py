@@ -8,8 +8,8 @@ print("\033c", end="")
 import random
 
 # Intro and Instructions to the program / game
-print("Hello and welcome to RNG Game press Enter / Return")
-input()
+print("Hello and welcome to RNG Game 👋")
+print()
 print("🔴 INSTRUCTIONS 🔴")
 print(" Whoever gets the higher number wins ")
 print("Press Enter / Return to start the game ")
